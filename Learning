@@ -1,0 +1,15 @@
+import datetime
+
+print (datetime.datetime.now())
+
+name1 = input("Please enter your Dad's name ")
+age1 = int(input("Please enter your Dad's age "))
+
+name2 = input("Please enter your Name ")
+age2 = int(input("Please enter your Age "))
+
+agegap = (age1) - (age2)
+
+print (f'Your name is {name2} and you are {agegap} years younger than {name1}')
+
+
