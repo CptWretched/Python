@@ -5,7 +5,7 @@ print("--------------------------")
 print("    M&M guessing game     ")
 print("--------------------------")
 
-mm_count = random.randint(1, 10)
+mm_count = random.randint(1, 100)
 attempt_limit = 5
 attempts = 0
 
@@ -27,11 +27,14 @@ while attempts < attempt_limit:
     else:
             print("That's too HIGH!")
             print("")
-            
-print("")
-print(f"Bye, you're done in {attempts}!")
+if mm_count == guess:          
+    print("")
+    print(f"Bye, you're done in {attempts} attemps!")
 
-
+else:
+    print("")
+    print(f"The number was {mm_count}")
+    input()
 
 
 
